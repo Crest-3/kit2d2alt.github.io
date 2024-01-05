@@ -6,11 +6,24 @@
 </head>
 
 <body>
-	<button onclick="openGame()">Open Game</button>
+	<button onclick="openGame()">surfers</button>
 	<script>
 		function openGame() {
 var win = window.open()
-var url = "https://sites.google.com/view/asslink"
+var url = "https://kit2d2alt.github.io/subway-surfers"
+var iframe = win.document.createElement('iframe')
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = "none";
+iframe.src = url
+win.document.body.appendChild(iframe)
+}
+	</script>	
+	<button onclick="openGame2()">tomb mask</button>
+	<script>
+		function openGame2() {
+var win = window.open()
+var url = "https://kit2d2alt.github.io/tombofthemask/"
 var iframe = win.document.createElement('iframe')
 iframe.style.width = "100%";
 iframe.style.height = "100%";
@@ -19,6 +32,33 @@ iframe.src = url
 win.document.body.appendChild(iframe)
 }
 	</script>
+	<button onclick="openGame3()">bitlife</button>
+	<script>
+		function openGame3() {
+var win = window.open()
+var url = "https://kit2d2alt.github.io/bitlife/"
+var iframe = win.document.createElement('iframe')
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = "none";
+iframe.src = url
+win.document.body.appendChild(iframe)
+}
+	</script>
+		<button onclick="openGame4()">Paperio 2</button>
+	<script>
+		function openGame4() {
+var win = window.open()
+var url = "https://kit2d2alt.github.io/paperio2/"
+var iframe = win.document.createElement('iframe')
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = "none";
+iframe.src = url
+win.document.body.appendChild(iframe)
+}
+	</script>
+	
 </body>
 
 </html>
