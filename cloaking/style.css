@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4d203b;
+    text-align: center;
+    margin: 100px;
+    color: white;
+}
+
+#passcode-input {
+    padding: 10px;
+    font-size: 20px;
+}
+
+#submit-button {
+    padding: none;
+    width: 200px; /* Set the width of the button */
+    height: 100px; /* Set the height of the button */
+    background-image: url('images/submit.png'); /* Set the background image */
+    background-size: 100% 100%; /* Scale the background image to cover the button */
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgb(255, 0, 0);
+}
+
+#additional-content {
+    margin-top: 2px;
+    padding: 20px;
+    background-color: #4d203b;
+    border-radius: 20px;
+    border-color:#42343c;
+}

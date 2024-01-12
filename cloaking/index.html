@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4d203b;
+    text-align: center;
+    margin: 100px;
+    color: white;
+}
+
+#passcode-input {
+    padding: 10px;
+    font-size: 20px;
+}
+
+#submit-button {
+    padding: none;
+    width: 200px; /* Set the width of the button */
+    height: 100px; /* Set the height of the button */
+    background-image: url('images/submit.png'); /* Set the background image */
+    background-size: 100% 100%; /* Scale the background image to cover the button */
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgb(255, 0, 0);
+}
+
+#additional-content {
+    margin-top: 2px;
+    padding: 20px;
+    background-color: #4d203b;
+    border-radius: 20px;
+    border-color:#42343c;
+}
+</style>
+<style>
+    /* width */
+    ::-webkit-scrollbar {
+        width: 20px;
+        transition: background 1.5s ease; /* Add transition for background color over 1.5 seconds */
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 0px grey; 
+        border-radius: 5px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #4d203b; 
+        border-radius: 20px;
+        transition: background 5s ease; /
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #4e173c; 
+    }
+</style>
+
+    
+</head>
+<body>
+    <h3>Enter secret code to unlock thicc content</h3>
+    <input type="password" id="passcode-input" placeholder="Enter secret code :0" onkeypress="handleKeyPress(event)">
+    <br>
+    <img src="images/submit.png" alt="submit button" onclick="checkPasscode()" id="submit-button">
+    <p id="message"></p>
+    <div id="additional-content">
+        <h2>monkey content</h2>
+        <p>oh mien gott its moonkeh!1!!11</p>
+        <p>loading mouse troll lmao</p>
+        <p>🙈🙉🙊</p>
+        <img src="images/monkey.png" alt="cute monkey" style="width: 100%; max-width: 200px; margin-top: 20px; border-radius: 8px;">
+        
+    </div>
+
+    <script>
+        function checkPasscode() {
+            var enteredPasscode = document.getElementById('passcode-input').value;
+            var correctPasscode = 'sniglets_rule';
+
+            if (enteredPasscode === correctPasscode) {
+                window.location.href = 'about.html'; // Redirect to your protected page
+            } else {
+                document.getElementById('message').innerHTML = 'Imagine being a teacher.';
+            }
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                checkPasscode();
+            }
+        }
+    </script>
+    <h2>reasons to switch to monkey race</h2>
+    <ul style="text-align: left; margin-top: 20px; padding-left: 20px;"></ul>
+    <li>life so bad when not monkey</li>
+    <li>monkey eat bananan without sus</li>
+    <li>monkey cute</li>
+    <li>moonki</li>
+    
+    </body>
+</html>
